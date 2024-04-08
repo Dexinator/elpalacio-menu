@@ -60,6 +60,7 @@ const { data } = Astro.props;
     } gap-2`}
     slot="hero"
   >
+  This is a test
     {
       data.categories.map((cat) => (
         <a href={`#${slugify(cat.title)}`} class="btn surface-dark">
