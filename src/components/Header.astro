@@ -30,17 +30,6 @@ const isActive = (href) => {
         <ul class="nav-underline relative -mr-4  ml-auto flex flex-nowrap justify-end pl-4 uppercase md:mr-0">
 
           <li>
-            <CartButton
-              label={t("cart")}
-              client:idle
-              transition:persist
-              transition:name="cart"
-            >
-              <Icon name="shopping-cart" class="h-6 w-6" />
-            </CartButton>
-          </li>
-
-          <li>
             <ColorSwitch client:idle />
           </li>
 
