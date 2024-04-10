@@ -24,50 +24,12 @@ const isActive = (href) => {
       class="grid place-items-center py-3 text-primary"
       ><Icon name="logo" class="w-40 h-20" /></a
     >
-    {
-      menu && (
-        <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-50 md:flex ">
-          {menu.map((link) => (
-            <li class={`${isActive(link.href) ? "active font-semibold" : ""}`}>
-              <a href={link.href} class={`block py-3`}>
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )
-    }
 
     {
       (
         <ul class="nav-underline relative -mr-4  ml-auto flex flex-nowrap justify-end pl-4 uppercase md:mr-0">
-          <li>
-            <CartButton
-              label={t("cart")}
-              client:idle
-              transition:persist
-              transition:name="cart"
-            >
-              <Icon name="shopping-cart" class="h-6 w-6" />
-            </CartButton>
-          </li>
-          <li>
-            <PageFind />
-          </li>
 
-          {social &&
-            social.slice(0, 3).map((link) => (
-              <li class="hidden md:block">
-                <a
-                  href={link.href}
-                  class="grid h-full place-items-center"
-                  target="_blank"
-                  aria-label={link.label}
-                >
-                  <Icon name={link.icon} class="w-6 h-6" />
-                </a>
-              </li>
-            ))}
+
 
           <li>
             <ColorSwitch client:idle />
