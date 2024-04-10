@@ -51,20 +51,7 @@ const contact = await getEntry("config", "contact");
     <main>
       <slot />
     </main>
-    <Footer>
-      <slot name="footer" />
-      <div class="pointer-events-none fixed bottom-0 right-0 z-50 w-full">
-        <div class="container-xl flex justify-end pb-4">
-          <a
-            href="#top"
-            aria-label={t("back_to_top")}
-            class="btn btn-icon surface-primary btn-to-top pointer-events-auto opacity-0"
-          >
-            <Icon name="up" class="w-6" /></a
-          >
-        </div>
-      </div>
-    </Footer>
+
     <Init client:idle />
 
     <ContactDialog client:idle contact={contact.data.form}>
