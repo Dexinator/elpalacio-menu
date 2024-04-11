@@ -39,8 +39,7 @@ categories:
         thumbnail: /src/assets/jovo.jpg
       - details:
           allergens: ""
-          labels: 
-            - local
+          labels: ""
         title: Cerveza Tiburón Imperial Stout
         intro: De Xalapa, Ver. Trajimos el frío sabor de la noche y el fuerte tostado del café, que convergen en ésta cerveza oscura, excelente maridaje para las viandas palaciegas.
         price:
@@ -58,8 +57,7 @@ categories:
         thumbnail: /src/assets/cafe.jpg
       - details:
           allergens: ""
-          labels: 
-          - local
+          labels: ""
         title: Calavera Morningstar
         intro: Cerveza IPA ¡beba el amargor de la vida en una cerveza! Y entréguese a la complejidad de un fermento fuerte como una maza, pero suave como despertar con el lucero del alba.
         price:
@@ -85,14 +83,14 @@ categories:
         title: Pulque Natural
         intro: Para crecer fuerte y sano, hay que beber pulque desde temprano.
         price:
-          - label: "Medio Litro"
-            price: 11.5
           - label: "Litro"
-            price: 11.5
+            price: 60
+          - label: "Medio Litro"
+            price: 40
           - label: "Litro y medio"
-            price: 11.5
+            price: 90
           - label: "Macuilli Tochtli – 5L"
-            price: 11.5
+            price: 250
       - details:
           allergens: ""
           labels:
@@ -101,14 +99,14 @@ categories:
         title: Pulque Curado Del Día
         intro: Piña, Moras de la casa.
         price:
-          - label: "Medio Litro"
-            price: 11.5
           - label: "Litro"
-            price: 11.5
+            price: 75
+          - label: "Medio Litro"
+            price: 45
           - label: "Litro y medio"
-            price: 11.5
+            price: 110
           - label: "Macuilli Tochtli – 5L"
-            price: 11.5
+            price: 325
       - details:
           allergens: ""
           labels:
@@ -117,14 +115,14 @@ categories:
         title: Pulque Curado a la Carta
         intro: Arándano, Pepino, Mango, Café.
         price:
-          - label: "Medio Litro"
-            price: 11.5
           - label: "Litro"
-            price: 11.5
+            price: 85
+          - label: "Medio Litro"
+            price: 55
           - label: "Litro y medio"
-            price: 11.5
+            price: 120
           - label: "Macuilli Tochtli – 5L"
-            price: 11.5
+            price: 370
       - details:
           allergens: ""
           labels:
@@ -133,14 +131,14 @@ categories:
         title: Pulque de Vino
         intro: La especialidad de la casa, un curado que mezcla lo mejor de México y el Mundo.
         price:
-          - label: "Medio Litro"
-            price: 11.5
           - label: "Litro"
-            price: 11.5
+            price: 105
+          - label: "Medio Litro"
+            price: 60
           - label: "Litro y medio"
-            price: 11.5
+            price: 150
           - label: "Macuilli Tochtli - 5L"
-            price: 11.5
+            price: 400
   - title: Licores de la Casa
     intro: Con amor y aguardiente, nada se siente.
     menu_items:
@@ -153,16 +151,16 @@ categories:
         intro: "De la Casa: Café, Chiles, Jamaica, Naranja, Limón, Chapulín, Té Negro, Canela, Piña-Limón, Guanábana<br>Especial: Cacao"
         price:
           - label: "De la casa"
-            price: 11.5
-          - label: "Especial"
-            price: 11.5
+            price: 45
+          - label: "Cacao"
+            price: 60
       - details:
           allergens: ""
           labels: ""
         title: Torito de Jobo
         intro: "Bebida única, traída desde Tres Valles, Veracruz, y hecho con el puro sazón jarocho. El Jobo es un tipo de ciruela que se consume en la zona sur de México"
         price:
-          - price: 11.5
+          - price: 50
       - details:
           allergens: ""
           labels: 
@@ -172,11 +170,11 @@ categories:
         intro: Fermentado en casa y con el cariño del hogar; un experimento que avivará tu paladar.
         price:
           - label: "Preparado"
-            price: 11.5
+            price: 60
           - label: "Con Licor"
-            price: 11.5
+            price: 70
           - label: "Con Mezcal"
-            price: 11.5
+            price: 80
   - title: Cervezas
     intro: Si merece un premio semanal, tome cerveza artesanal.
     menu_items:
@@ -186,11 +184,10 @@ categories:
         title: Cerveza Popular
         intro: Corona, Victoria, Carta blanca, Pacífico, Stella
         price:
-          - price: 12.5
+          - price: 45
       - details:
           allergens: ""
-          labels:
-          - local
+          labels: ""
         title: Cerveza Tiburón
         intro: >-
           Cervecería Independiente de Xalapa, Veracruz.
@@ -198,7 +195,7 @@ categories:
 
           Mexican Style Lager ● Clara Alc. Vol. 3.8%.<br>Porter ● Oscura Alc. Vol. 5.8%.<br>Imperial Stout ● Muy oscura Alc. Vol. 7.9%.<br>Leviatán ● Hazy Ipa Alc. Vol. 8.1%.
         price:
-          - price: 90
+          - price: 120
       - details:
           allergens: ""
           labels: 
@@ -210,7 +207,18 @@ categories:
 
           Dark Cthulhu ● Stout Alc. Vol. 5.2%
         price:
-          - price: 11.5
+          - price: 80
+      - details:
+          allergens: ""
+          labels: ""
+        title: Cerveza Calavera
+        intro: >-
+          Despierta con el lucero del alba. Cervecería Chilanga.
+
+
+          Calavera Morningstar ● IPA Alc. Vol. 8%
+        price:
+          - price: 120
   - title: Vinos y mezcales
     intro: Para todo mal, mezcal; para todo bien, también; y si no hay remedio, litro y medio.
     menu_items:
@@ -220,77 +228,80 @@ categories:
         title: Vinos
         intro: "Viña maipo: cabernet sauvignon, merlot y syrah"
         price:
-          - price: 200
+          - label: Copa
+            price: 70
       - details:
           allergens: ""
-          labels: ""
+          labels:
+            - Hecho en Palacio
         title: Sangría
         intro: "Receta única del Palacio Negro"
         price:
-          - price: 200
+          - price: 60
       - details:
           allergens: ""
           labels: ""
         title: Mezcal de la Casa
-        intro: Quien a buen mezcal se arrima, buena vida le cobija.
-        price:
-          - label: "Silvestre"
-            price: 11.5
-          - label: "Cupreata"
-            price: 11.5
-          - label: "Negro"
-            price: 11.5
-          - label: "Gusano"
-            price: 11.5
-          - label: "Alacrán"
-            price: 11.5
-          - label: "Cannábico"
-            price: 11.5
-      - details:
-          allergens: ""
-          labels: ""
-        title: Selección de mezcal
-        intro: Amor sincero, el de un mezcalero.
-        price:
-          - label: "400 Conejos - Joven"
-            price: 11.5
-          - label: "Zignum - Joven"
-            price: 11.5
-          - label: "Creyente - Joven"
-            price: 11.5
-          - label: "Mitre - Joven"
-            price: 11.5
-  - title: Sin alcohol
-    intro: Bueno es saber que los vasos, sirven para beber; lo malo es que no sabemos, para qué sirve la sed.
-    menu_items:
-      - details:
-          allergens: ""
-          labels: ""
-        title: Agüita de Sabor
-        intro: "Pregunta por el sabor de día"
+        intro: >-
+          Silvestre, Cupreata, Negro, Gusano. 
+
+          Mezcales artesanales de Puebla y Guerreros, traídos para brindarle la mejor experiencia Palaciega.
         price:
           - price: 50
       - details:
           allergens: ""
           labels: ""
+        title: Mezcales Extravagantes
+        intro: Alacrán, Cannábico.
+        price:
+          - price: 70
+      - details:
+          allergens: ""
+          labels: ""
+        title: Selección de mezcal
+        intro: Quien a buen mezcal se arrima, buena vida le cobija.
+        price:
+          - label: "400 Conejos - Joven"
+            price: 65
+          - label: "Zignum - Joven"
+            price: 75
+          - label: "Creyente - Joven"
+            price: 85
+          - label: "Mitre - Joven"
+            price: 100
+  - title: Sin alcohol
+    intro: Bueno es saber que los vasos, sirven para beber; lo malo es que no sabemos, para qué sirve la sed.
+    menu_items:
+      - details:
+          allergens: ""
+          labels:
+            - Hecho en Palacio
+        title: Agüita de Sabor
+        intro: "Pregunta por el sabor de día"
+        price:
+          - price: 35
+      - details:
+          allergens: ""
+          labels:
+            - Hecho en Palacio
         title: Té calientito
         intro: Hecho con fruta al momento.
         price:
-          - price: 11.5
+          - price: 30
       - details:
           allergens: ""
           labels: ""
         title: Refrescos
         intro: "Cola, Sangría"
         price:
-          - price: 50
+          - price: 30
       - details:
           allergens: ""
           labels: ""
         title: Café americano
         intro: "Con o sin canela"
         price:
-          - price: 11.2
+          - price: 30
 style:
   hero_template: image
   template: split
