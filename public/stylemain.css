@@ -11,7 +11,7 @@ html, body {
 }
 
 .frontend-side {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+  background-image: url("../src/assets/coverAlimentos.jpg");
 }
 
 .uiux-side {
