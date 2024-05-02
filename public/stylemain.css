@@ -11,11 +11,11 @@ html, body {
 }
 
 .frontend-side {
-  background-image: url("/coverAlimentos.jpg");
+  background-image: url("/coverBebidas.jpg");
 }
 
 .uiux-side {
-  background-image: url("/coverBebidas.jpg");
+  background-image: url("/coverAlimentos.jpg");
 }
 
 .split-pane {
@@ -87,10 +87,10 @@ html, body {
 	cursor: pointer;
 }
 .uiux-side.split-pane button:hover, .split-pane a.button:hover {
-    color: #600c0a;
+    color: #dd9501;
   }
   .frontend-side.split-pane button:hover, .split-pane a.button:hover {
-    color: #dd9501;
+    color: #600c0a;
   }
 
 #split-pane-or {
