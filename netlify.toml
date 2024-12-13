@@ -20,3 +20,7 @@
   path = "/api/contact-postmark"
 
 
+[[redirects]]
+  from = "/"
+  to = "/menu/main/"
+  status = 301
