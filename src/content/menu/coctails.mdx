@@ -4,7 +4,97 @@ description: Menú de Bebidas Palacio
 layout-hidden: menu-item
 intro: "Panza llena, corazón contento, como presx tiene usted acceso a las sabrosas viandas que hemos preparado para lxs condenadxs. ¡Atrévase a combinar los ingredientes más exquisitos y las mejores preparaciones que El Palacio puede ofrecer!"
 categories:
-  - title: Sentencias
+  - title: Cenaduría
+    intro: Elige tu mejor grillete para esta experiencia y agrégale un ingrediente de tu elección!.
+    thumbnail: /src/assets/foodELPA3.jpg
+    menu_items:
+      - details:
+          labels:
+            - local
+        title:  Molletes
+        intro: La especialidad de la casa. Dos mitades de pan con mayonesa, frijolitos deliciosos de la casa, gratinados con queso gouda y parmesano con una salsita alado.
+        price:
+          - label: "Sencillo"
+            price: 60
+          - label: "Toppings tradicionales (Huitlacoche, chicharrón, plátano macho, manzana con tocino, pepita tostada, pollo)"
+            price: 90
+          - label: "Topping especial (carne arabe de la casa o cochinita pibil)"
+            price: 120
+          - label: "Para llevar"
+            price: "+10"
+        thumbnail: /src/assets/molletes.jpg
+      - details:
+          labels:
+            - local
+        title:  Tostadas
+        intro: Orden de dos piezas con mayonesa, frijolitos de la casa, lechuga, jitomate y queso añejo.
+        price:
+          - label: "Sencillas"
+            price: 70
+          - label: "Toppings tradicionales (Huitlacoche, chicharrón, pepita tostada, pollo)"
+            price: 90
+          - label: "Topping especial (carne arabe de la casa o cochinita pibil)"
+            price: 120
+      - details:
+          labels:
+            - local
+        title: Nachos
+        intro: Totopos fritos con los inigualables frijolitos palaciegos, queso de nachos y gouda horneados para que amarre. Ideal para compartir.
+        price:
+          - label: "Sencillos"
+            price: 80
+          - label: "Toppings tradicionales (Huitlacoche, chicharrón, plátano macho, pepita tostada, pollo)"
+            price: 90
+          - label: "Topping especial (carne arabe de la casa o cochinita pibil)"
+            price: 130
+        thumbnail: /src/assets/nachos.png
+      - details:
+          labels:
+            - local
+        title: Chicharrín preparado (cacalas pa lxs xalapeñxs)
+        intro: Chicharrón de harina con mayonesa, lechuga, jitomate y queso añejo.
+        price:
+          - label: "Sencillos"
+            price: 45
+          - label: "Toppings tradicionales (Huitlacoche, chicharrón,  pepita tostada, pollo)"
+            price: 90
+          - label: "Topping especial (carne arabe de la casa o cochinita pibil)"
+            price: 130
+      - details:
+          labels:
+            - local
+        title: Esquite frito con tlalito
+        intro: Perfecto para satisfacer el antojo. Preparado con mayonesa y quesito.
+        price:
+          - price: 75
+  - title: Botanas
+    intro: Para el antojo, sin mal de ojo.
+    menu_items:
+      - details:
+          labels: ""
+        title: Palomitas
+        intro: ""
+        price:
+          - price: 45
+      - details:
+          labels: ""
+        title: Malangas
+        intro: ""
+        price:
+          - price: 55
+      - details:
+          labels: ""
+        title: Cacahuates
+        intro: ""
+        price:
+          - price: 45
+      - details:
+          labels: ""
+        title: Churritos de maíz
+        intro: ""
+        price:
+          - price: 50
+  - title: Paquetes
     intro: Pásele a lo barrido y disfrute de las mejores combinaciones de nuestro menú.
     menu_items:
       - details:
@@ -49,128 +139,6 @@ categories:
             price: 175
           - label: "Con Curado de Vino"
             price: 235
-  - title: Bases
-    intro: Elige tu mejor grillete para esta experiencia y agrégale un ingrediente de tu elección!.
-    thumbnail: /src/assets/foodELPA3.jpg
-    menu_items:
-      - details:
-          labels:
-            - local
-        title:  Molletes
-        intro: Pan en mitades, con un toque de mayonesa bañado con frijoles de olla hechos en casa y refritos a la perfección, gratinados al horno con queso gouda y parmesano.
-        price:
-          - label: "Ingrediente Especial"
-            price: 120
-          - label: "Con Ingrediente"
-            price: 90
-          - label: "Sencillo"
-            price: 60
-          - label: "Para llevar"
-            price: "+10"
-      - details:
-          labels:
-            - local
-        title:  Nachos
-        intro: Tortillas fritas y bañadas con los inigualables frijoles del Palacio, queso de nachos y queso gouda, ideal para compartir.
-        price:
-          - label: "Ingrediente Especial"
-            price: 130
-          - label: "Con Ingrediente"
-            price: 100
-          - label: "Sencillo"
-            price: 80
-        thumbnail: /src/assets/nachos.png
-      - details:
-          labels:
-            - local
-        title:  Tostadas
-        intro: Tortillas aderezadas con mayonesa y los frijoles de la casa más el ingrediente de tu elección, lechuga, quesillo y jitomate. Excelente y fresca elección para las tardes calurosas.
-        price:
-          - label: "Ingrediente Especial"
-            price: 120
-          - label: "Con Ingrediente"
-            price: 90
-          - label: "Sencillo"
-            price: 60
-  - title: Ingredientes
-    items: null
-    intro: Antes de usted comer, algo debe de saber, ingredientes tenemos, paladares no sabemos, pero si lo que quiere es disfrutar, cualquier opción le hará gozar.
-    menu_items:
-      - details:
-          labels: ""
-        title: Chicharrón
-        intro: Tlalitos de la mejor calidad para el paladar en condena, acompañado con cebolla y chile jalapeño.
-      - details:
-          labels: ""
-        title: Pollo de la Casa
-        intro: Macerado con la técnica única de la casa, con este sabor cualquier mal se pasa.
-      - details:
-          labels:
-            - local
-            - Hecho en Palacio
-            - vegano
-        title: Plátano macho
-        intro: Si el sabor dulce es lo que quiere, el plátano del Palacio usted prefiere.
-      - details:
-          labels:
-            - local
-            - Hecho en Palacio
-        title: Pipián Tostado
-        intro: Un platillo como en Veracruz se come, aquí en El Palacio pipián se le pone. Pepita de calabaza tostada en comal de barro y molido con sal en el molcajete.
-      - details:
-          labels:
-            - local
-            - Hecho en Palacio
-            - vegano
-        title: Hongos
-        intro: Con el sabor de la libertad. Preparado con la técnica de El Palacio. Sabrosa proteína alternativa.
-      - details:
-          labels:
-            - local
-            - Hecho en Palacio
-        title: Carne Árabe - Especial
-        intro: Para un sabor singular, pida algo oriental, la carne árabe de la casa, un sabor sin igual.
-      - details:
-          labels:
-            - local
-            - Hecho en Palacio
-        title: Cochinita - Especial
-        intro: Cerdito :).
-      - details:
-          labels: ""
-        title:  Manzana con Tocino
-        intro: El nuevo sabor de EPN, manzana amarilla con un toque de miel y tocino asadito. Sabor agridulce para presxs selectxs.
-  - title: Antojitos
-    intro: Para el antojo, sin mal de ojo.
-    menu_items:
-      - details:
-          labels:
-            - local
-        title: Chicharrín Preparado
-        intro: Cuadro de chicharrón de harina, con un toque de mayonesa, le agregamos lechuga, queso añejo y salsa picante. ¡Puedes agregar los ingredientes de la casa!
-        price:
-          - label: "Con Ingrediente"
-            price: 60
-          - label: "Sencillo"
-            price: 45
-      - details:
-          labels: ""
-        title: Palomitas
-        intro: ""
-        price:
-          - price: 45
-      - details:
-          labels: ""
-        title: Cacahuates
-        intro: ""
-        price:
-          - price: 45
-      - details:
-          labels: ""
-        title: Churritos de maíz
-        intro: ""
-        price:
-          - price: 50
 style:
   hero_template: image
   template: split
