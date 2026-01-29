@@ -163,6 +163,54 @@ Pagefind integration:
 4. **Allergen/Label icons**: Menu items support allergen warnings and dietary labels via icon system
 5. **MDX Components**: Auto-imported components via `astro-m2dx` with `src/content/_components.ts`
 
+## Actualización Semanal del Menú
+
+**Deadline**: Jueves 6:00 PM
+
+### Archivos que cambian semanalmente
+
+Los sabores/productos que rotan se encuentran en `src/content/menu/drinks.mdx`:
+
+| Campo | Línea aprox. | Ejemplo actual |
+|-------|--------------|----------------|
+| Curado de temporada | ~90 | intro: "Guayaba" |
+| Curado a la Carta | ~104 | intro: "Sorpresa, Ponche" |
+| Curado Especial | ~118-122 | "Vino, Nanche" |
+| Torito | ~240 | "Guanábana y Mango" |
+| Chela Célebres | ~144 | intro: "Nochebuena" |
+| Recomendación destacada | ~22-32 | Producto destacado de la semana |
+
+### Flujo de actualización
+
+1. Recibir cambios de Slack (canal de El Palacio)
+2. Editar `drinks.mdx` y/o `coctails.mdx`
+3. Commit con mensaje: `menu: actualiza sabores semana [fecha]`
+4. Push al repositorio (deploy automático en Netlify)
+
+### Comando rápido
+
+Usar `/menu` para iniciar el flujo de actualización guiado.
+
+### Ejemplo de petición
+
+```
+Actualiza el menú:
+- Curado de temporada: Piña
+- Curado a la Carta: Fresa, Mango
+- Curado Especial: Café, Nuez
+- Torito: Cacahuate
+- Chela Célebres: Modelo Especial
+```
+
 ## License & Attribution
 
 CC BY-ND 4.0 license. Purchase from https://nebulix.unfolding.io/shop/nebulix-license/ to remove attribution requirement.
+
+---
+
+## Bitacora de Sesiones
+
+**Negocio:** Palacio
+**Proyecto:** elpalacio-menu
+
+Al terminar la sesion de trabajo, registra lo realizado usando `/bitacora` o menciona "terminamos" para que se guarde automaticamente en Obsidian (JorgeTrabaja/Palacio/elpalacio-menu/).
