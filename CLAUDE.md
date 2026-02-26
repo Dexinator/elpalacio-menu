@@ -208,6 +208,20 @@ CC BY-ND 4.0 license. Purchase from https://nebulix.unfolding.io/shop/nebulix-li
 
 ---
 
+## Slack Context
+
+- **Workspace:** El Palacio Negro
+- **MCP Server:** slack-palacio
+- **Canal:** #nueva-carta-2025 (C06SNHDV8LB)
+
+Para revisar conversaciones de Slack sobre este proyecto, usa las herramientas del MCP `slack-palacio`:
+- `slack_get_channel_history` con channel `C06SNHDV8LB`
+- `slack_get_thread_replies` para hilos completos
+
+Cuando te pidan revisar tareas o cambios pendientes, lee el historial y extrae action items.
+
+---
+
 ## Bitacora de Sesiones
 
 **Negocio:** Palacio
