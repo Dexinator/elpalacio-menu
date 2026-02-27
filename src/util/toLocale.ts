@@ -11,7 +11,8 @@ if (!currency)
         : 'USD';
 
 let langCode = 'en-US';
-if (lang.length === 2) langCode = `${lang}-${lang.toUpperCase()}`;
+if (lang === 'es') langCode = 'es-MX';
+else if (lang.length === 2) langCode = `${lang}-${lang.toUpperCase()}`;
 if (lang === 'en') langCode = 'en-US';
 if (lang.length === 5) langCode = lang;
 
@@ -41,7 +42,9 @@ export function formatDate(date: Date): string {
 export function formatPrice(price: number): string {
     const formattedPrice = new Intl.NumberFormat(langCode, {
         style: 'currency',
-        currency: currency
+        currency: currency,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
     }).format(price);
 
     return formattedPrice.replaceAll(/\s/g, '');
